@@ -1,0 +1,15 @@
+{
+  "name": "vinktar",
+  "description": "Vinktar: product analytics and error tracking your coding agent can use.",
+  "owner": {
+    "name": "Vinktar",
+    "url": "https://vinktar.com"
+  },
+  "plugins": [
+    {
+      "name": "vinktar",
+      "source": "./",
+      "description": "Install Vinktar in your app and query its analytics and errors over MCP."
+    }
+  ]
+}

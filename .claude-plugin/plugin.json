@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "vinktar",
+  "displayName": "Vinktar",
+  "version": "0.1.0",
+  "description": "Product analytics and error tracking your coding agent can use: installs Vinktar in your app, checks the data arrives, and answers questions about your events and errors.",
+  "author": { "name": "Vinktar", "url": "https://vinktar.com" },
+  "homepage": "https://vinktar.com/docs/mcp",
+  "repository": "https://github.com/vinktarhq/agent",
+  "license": "MIT",
+  "keywords": ["analytics", "error-tracking", "mcp", "observability"]
+}

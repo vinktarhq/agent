@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vinktar",
+  "version": "0.1.0",
+  "description": "Product analytics and error tracking your coding agent can use: installs Vinktar in your app, checks the data arrives, and answers questions about your events and errors.",
+  "author": { "name": "Vinktar", "url": "https://vinktar.com" },
+  "homepage": "https://vinktar.com/docs/mcp",
+  "repository": "https://github.com/vinktarhq/agent",
+  "license": "MIT"
+}
