@@ -41,3 +41,8 @@ The guide has you leave a Vinktar block in this repository's `AGENTS.md`, which 
 next agent any of this is here. Keep it: when you add or change a `track()` call, call
 `define_event` in the same step, and when asked what is happening in the product, start with
 `whats_changed`.
+
+Before adding an event to an app that is already set up, call `get_install_guide` with
+`section: "conventions"`. The short version: event names and property keys are `snake_case`, object
+then past-tense action (`report_exported`); a description is one sentence; a name never changes its
+meaning, so a new meaning gets a new name.
