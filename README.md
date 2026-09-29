@@ -55,9 +55,11 @@ added separately.
 
 ## What it can and can't do
 
-The agent sees what you'd see in the workspace and project you approved. It can't delete anything,
-create projects or keys, manage members or billing, or send data anywhere. Every call is logged on
-the project's AI agents page, and an admin can switch agents off.
+The agent sees what you'd see in the workspace and project you approved. The only things it can
+delete are boards and panels, and those stay restorable from the boards page for 30 days. It can't
+delete events, errors, issues or projects, create projects or keys, manage members or billing, or
+add somewhere new to send your data. Every call is logged on the project's AI agents page, and an
+admin can switch agents off.
 
 Vinktar works on every plan, Free included. Data requests count against a monthly allowance;
 setting a project up never does, and nothing is charged per call.
