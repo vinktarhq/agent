@@ -11,13 +11,15 @@ Vinktar tools on the MCP connection this plugin adds.
 ## 1. Get connected
 
 Look for the Vinktar tools (`get_install_guide`, `list_projects`, `get_project_keys`). Their names
-carry a prefix that differs from app to app.
+carry a prefix that differs from app to app. The tools can be listed before anyone has signed in,
+so being there is not enough: call `list_projects`.
 
-- **They are there:** go to step 2.
+- **It answers:** go to step 2.
 - **A Vinktar tool whose name ends in `authenticate` is there instead:** call it. It returns a
   sign-in link. Give the link to the person, wait until they say they approved, then go to step 2.
-- **A Vinktar server or connector is listed as needing sign-in, with no such tool:** signing in is
-  the one step only the person can do, so say exactly where, for the app you are running in:
+- **It fails for want of sign-in, or the Vinktar server or connector is listed as needing it:**
+  signing in is the one step only the person can do. Some apps open the sign-in by themselves;
+  otherwise say exactly where, for the app you are running in:
   - Claude Code in a terminal: `/mcp`, pick `vinktar`, choose Authenticate.
   - Claude Desktop and Cowork: open Customize, find Vinktar, and connect its `vinktar` connector.
   - Codex: `codex mcp login vinktar`. Cursor asks on its own.
