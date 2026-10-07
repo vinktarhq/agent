@@ -3,7 +3,7 @@
   "name": "vinktar",
   "displayName": "Vinktar",
   "version": "0.1.2",
-  "description": "Product analytics and error tracking your coding agent can use: installs Vinktar in your app, checks the data arrives, and answers questions about your events and errors.",
+  "description": "Error tracking and product analytics for small teams: installs Vinktar in your app, checks the data arrives, and answers questions about your events and errors.",
   "author": { "name": "Vinktar", "url": "https://vinktar.com" },
   "homepage": "https://vinktar.com/docs/mcp",
   "icon": "./.claude-plugin/icon.png",

@@ -4,7 +4,7 @@
 agent can use. This plugin gives Claude Code, Cursor and Codex two things at once:
 
 - **The Vinktar MCP server** (`https://mcp.vinktar.com/mcp`). You sign in in the browser and choose
-  a workspace, optionally one project, and read or read and write. No key to paste.
+  a workspace, the projects it may reach, and read, build or configure. No key to paste.
 - **The `setup` skill.** Run `/vinktar:setup` in Claude Code, or ask your agent to "set up Vinktar".
   It reads your repo, installs the SDK for your stack in a standard layout, fetches the project's
   write key over the connection, wires identify, errors and source maps, defines each event it
