@@ -8,17 +8,28 @@ description: Set up Vinktar product analytics and error tracking in this codebas
 Vinktar is product analytics and error tracking. You set it up in this codebase through the
 Vinktar tools on the MCP connection this plugin adds.
 
-## 1. Check the connection
+## 1. Get connected
 
-Look for the Vinktar tools (`get_install_guide`, `list_projects`, `get_project_keys`).
+Look for the Vinktar tools (`get_install_guide`, `list_projects`, `get_project_keys`). Their names
+carry a prefix that differs from app to app.
 
 - **They are there:** go to step 2.
-- **The server is listed but needs sign-in:** tell the person to sign in and stop. In Claude Code:
-  run `/mcp`, pick `vinktar`, choose Authenticate. In Codex: `codex mcp login vinktar`. Cursor asks on
-  its own. They approve in the browser with **read and write** access and pick the project.
-- **There is no Vinktar server:** tell the person Vinktar needs an account and a connection. They
-  register at https://vinktar.com (it creates a workspace and a project), then install this plugin or
-  add the MCP server `https://mcp.vinktar.com/mcp`, then ask you again. Stop.
+- **A Vinktar tool whose name ends in `authenticate` is there instead:** call it. It returns a
+  sign-in link. Give the link to the person, wait until they say they approved, then go to step 2.
+- **A Vinktar server or connector is listed as needing sign-in, with no such tool:** signing in is
+  the one step only the person can do, so say exactly where, for the app you are running in:
+  - Claude Code in a terminal: `/mcp`, pick `vinktar`, choose Authenticate.
+  - Claude Desktop and Cowork: open Customize, find Vinktar, and connect its `vinktar` connector.
+  - Codex: `codex mcp login vinktar`. Cursor asks on its own.
+
+  In the browser they sign in to Vinktar, or make an account there on the spot, leave Build and
+  Configure switched on, and approve. Then carry on from step 2 without being asked again.
+- **There is no Vinktar server at all:** tell the person to install this plugin or add the MCP
+  server `https://mcp.vinktar.com/mcp`, then ask you again. Stop.
+- **No codebase is open** (a chat with no project, a phone): the install needs the code, so say
+  that, and ask the person to open their project in Claude Code or the Code tab and ask again. If
+  their app already reports to Sentry or Bugsnag, `get_project_keys` has the line that points it at
+  Vinktar, which they can paste themselves.
 
 Never ask for a key to paste, and never write a key into the code by hand.
 

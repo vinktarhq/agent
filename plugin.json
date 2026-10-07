@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vinktar",
-  "version": "0.1.2",
-  "description": "Error tracking and product analytics for small teams: installs Vinktar in your app, checks the data arrives, and answers questions about your events and errors.",
+  "version": "0.1.3",
+  "description": "Error tracking and product analytics for small teams. After adding it, open your project and ask Claude to set up Vinktar: it signs you in, installs the SDK, checks the data arrives, and answers questions about your events and errors.",
   "author": { "name": "Vinktar", "url": "https://vinktar.com" },
   "homepage": "https://vinktar.com/docs/mcp",
   "repository": "https://github.com/vinktarhq/agent",
