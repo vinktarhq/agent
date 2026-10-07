@@ -3,7 +3,7 @@
   "name": "com.vinktar/mcp",
   "title": "Vinktar",
   "description": "Error tracking for small teams and their coding agents.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://vinktar.com/docs/mcp",
   "icons": [{ "src": "https://vinktar.com/brand/vinktar-mark-512.png", "mimeType": "image/png", "sizes": ["512x512"] }],
   "repository": { "url": "https://github.com/vinktarhq/agent", "source": "github" },
