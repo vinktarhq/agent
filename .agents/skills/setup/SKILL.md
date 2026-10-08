@@ -1,5 +1,5 @@
 ---
-name: vinktar-setup
+name: setup
 description: Set up Vinktar product analytics and error tracking in this codebase end to end, from picking the SDK to checking the data arrives and saying where each environment variable goes. Use when asked to install, set up, configure, audit or extend Vinktar, or to add or change tracked events.
 ---
 

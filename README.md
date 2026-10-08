@@ -49,7 +49,7 @@ ask your agent to call `get_install_guide`. Setup for each client:
 
 **A harness that reads skills but has no plugin format**
 
-Copy `.agents/skills/vinktar-setup/` into your repository (or your home directory, wherever your
+Copy `.agents/skills/setup/` into your repository (or your home directory, wherever your
 tool looks). It is the same skill, at the path most tools agree on, and it needs the MCP server
 added separately.
 
