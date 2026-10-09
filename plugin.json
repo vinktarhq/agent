@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vinktar",
-  "version": "0.1.6",
-  "description": "Error tracking and product analytics for small teams. After adding it, open your project and ask Claude to set up Vinktar: it installs the SDK, checks the data arrives, and answers questions about your events and errors. Signing in is yours to do: Claude Code asks for it, and in Claude Desktop you connect Vinktar on this plugin's Connectors tab or at claude.ai/customize/connectors.",
+  "version": "0.1.7",
+  "description": "Error tracking and product analytics for small teams, set up by Claude. After adding the plugin: 1. Open the Connectors tab and connect Vinktar. You can make your account there. 2. Ask Claude: \"Set up Vinktar for my app.\" It adds the SDK, checks that data arrives, and answers questions about your errors and events.",
   "author": { "name": "Vinktar", "url": "https://vinktar.com" },
   "homepage": "https://vinktar.com/docs/mcp",
   "repository": "https://github.com/vinktarhq/agent",
