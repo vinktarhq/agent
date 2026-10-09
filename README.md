@@ -14,8 +14,8 @@ agent can use. This plugin gives Claude Code, Cursor and Codex two things at onc
 Once it's installed, ask it things like "what changed this week?" or "which errors hit the most
 people since the last release?".
 
-You need a Vinktar account first. [Register](https://vinktar.com?ref=agent-plugin); it creates a
-workspace and a project.
+You don't need an account beforehand: the sign-in lets you make one, and it creates a workspace and
+a project.
 
 ## Install
 
@@ -26,7 +26,14 @@ claude plugin marketplace add vinktarhq/agent
 claude plugin install vinktar@vinktar
 ```
 
-Then run `/mcp` in a session, pick `vinktar` and authenticate, and run `/vinktar:setup`.
+Claude Code says Vinktar needs authentication: run `/mcp`, pick `vinktar` and authenticate, then
+run `/vinktar:setup`.
+
+**Claude Desktop**
+
+Add the plugin, then connect Vinktar on the plugin's Connectors tab or at
+[claude.ai/customize/connectors](https://claude.ai/customize/connectors). Adding the plugin does not
+sign you in by itself.
 
 **Cursor**
 
