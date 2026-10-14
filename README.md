@@ -14,8 +14,11 @@ agent can use. This plugin gives Claude Code, Cursor and Codex two things at onc
 Once it's installed, ask it things like "what changed this week?" or "which errors hit the most
 people since the last release?".
 
-You don't need an account beforehand: the sign-in lets you make one, and it creates a workspace and
-a project.
+You don't need an account beforehand. Before anyone signs in, the agent can start a project on its
+own (`start_project` on the `vinktar-start` connection), set the app up with its key and check that
+data arrives; you then open the claim link it gives you, which signs you in or makes your account and
+keeps the project with its data. Unclaimed, a project takes up to 10,000 events and is deleted with
+its data after 7 days.
 
 ## Install
 
@@ -26,13 +29,14 @@ claude plugin marketplace add vinktarhq/agent
 claude plugin install vinktar@vinktar
 ```
 
-Claude Code says Vinktar needs authentication: run `/mcp`, pick `vinktar` and authenticate, then
-run `/vinktar:setup`.
+Run `/vinktar:setup`. It can set the app up before you sign in; to ask questions about your data
+later, run `/mcp`, pick `vinktar` and authenticate.
 
 **Claude Desktop**
 
-Add the plugin, then connect Vinktar on the plugin's Connectors tab or at
-[claude.ai/customize/connectors](https://claude.ai/customize/connectors). Adding the plugin does not
+Add the plugin and ask Claude to set up Vinktar. To ask about your data afterwards, connect Vinktar on
+the plugin's Connectors tab or at
+[claude.ai/customize/connectors](https://claude.ai/customize/connectors): adding the plugin does not
 sign you in by itself.
 
 **Cursor**
@@ -64,8 +68,9 @@ added separately.
 
 The agent sees what you'd see in the workspace and project you approved. The only things it can
 delete are boards and panels, and those stay restorable from the boards page for 30 days. It can't
-delete events, errors, issues or projects, create projects or keys, manage members or billing, or
-add somewhere new to send your data. Every call is logged on the project's AI agents page, and an
+delete events, errors, issues or projects, create projects or keys once you are signed in, manage
+members or billing, or add somewhere new to send your data. Before sign-in it can start one project
+nobody owns until you claim it. Every call is logged on the project's AI agents page, and an
 admin can switch agents off.
 
 Vinktar works on every plan, Free included. Data requests count against a monthly allowance;

@@ -1,6 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "vinktar": { "type": "streamable-http", "url": "https://mcp.vinktar.com/mcp?login" }
+    "vinktar": { "type": "streamable-http", "url": "https://mcp.vinktar.com/mcp?login" },
+    "vinktar-start": { "type": "streamable-http", "url": "https://mcp.vinktar.com/mcp?start" }
   }
 }
