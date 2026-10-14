@@ -49,8 +49,10 @@ From GitHub Repository. Cursor asks you to sign in the first time it connects.
 ```sh
 codex plugin marketplace add vinktarhq/agent
 codex plugin add vinktar@vinktar
-codex mcp login vinktar
+codex mcp add vinktar --url https://mcp.vinktar.com/mcp
 ```
+
+The last line adds the connection and opens the sign-in in your browser.
 
 **Any other MCP client**
 

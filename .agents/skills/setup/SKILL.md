@@ -34,7 +34,7 @@ listed before sign-in, so being there is not enough: call `list_projects`.
     Connect. Then start a new chat and ask again: one that was already open may not pick the
     connection up.
   - Claude Code in a terminal or an editor: `/mcp`, pick `vinktar`, choose Authenticate.
-  - Codex: `codex mcp login vinktar`. Cursor asks on its own.
+  - Codex: `codex mcp add vinktar --url https://mcp.vinktar.com/mcp` (or `codex mcp login vinktar` if it is there already). Cursor asks on its own.
   - Anything else: add `https://mcp.vinktar.com/mcp` as an MCP server. It finds the sign-in itself.
 
   In the browser they sign in to Vinktar, or make an account right there (nobody has to register
