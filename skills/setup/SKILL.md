@@ -11,8 +11,8 @@ Vinktar tools on the MCP connection this plugin adds.
 ## 1. Get connected
 
 Look for the Vinktar tools (`get_install_guide`, `list_projects`, `get_project_keys`). Their names
-carry a prefix that differs from app to app, and this plugin adds two connections: `vinktar`, which
-asks the person to sign in, and `vinktar-start`, which works before anyone has. The tools can be
+carry a prefix that differs from app to app. This plugin adds one connection, `vinktar`, which works
+before anyone has signed in and asks for sign-in at the first call that reads data. The tools are
 listed before sign-in, so being there is not enough: call `list_projects`.
 
 - **It answers:** go to step 2.

@@ -15,7 +15,7 @@ Once it's installed, ask it things like "what changed this week?" or "which erro
 people since the last release?".
 
 You don't need an account beforehand. Before anyone signs in, the agent can start a project on its
-own (`start_project` on the `vinktar-start` connection), set the app up with its key and check that
+own (`start_project`), set the app up with its key and check that
 data arrives; you then open the claim link it gives you, which signs you in or makes your account and
 keeps the project with its data. Unclaimed, a project takes up to 10,000 events and is deleted with
 its data after 7 days.
