@@ -14,7 +14,7 @@
     "com.openai": {
       "interface": {
         "displayName": "Vinktar",
-        "shortDescription": "Error tracking for small teams and their coding agents",
+        "shortDescription": "Error tracking and analytics",
         "longDescription": "Vinktar keeps a product's errors and its analytics events in one place. Your agent sets it up in your codebase: it installs the SDK for your stack, fetches the project's write key, defines each event it adds and checks what actually arrived. Then ask it about your errors and events: open issues with their stack traces, the release and what the user did before, trends, funnels and retention, or SQL when the question needs it. When you sign in you choose the workspace, the projects, and whether the agent may only read or also build and configure. It cannot delete events, errors, issues or projects, and every call it makes is listed on the AI agents page.",
         "developerName": "Vinktar",
         "category": "Developer Tools",
