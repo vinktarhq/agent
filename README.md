@@ -11,6 +11,9 @@ agent can use. This plugin gives Claude Code, Cursor and Codex two things at onc
   tracks, checks what actually arrived, and ends with a list of every environment variable and where
   it goes.
 
+- **The `/vinktar` command.** Type `/vinktar` to set Vinktar up in this repo, or once it is set up
+  to hear what broke. `/vinktar what broke after the last deploy?` asks a question directly.
+
 Once it's installed, ask it things like "what changed this week?" or "which errors hit the most
 people since the last release?".
 
