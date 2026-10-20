@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vinktar",
-  "version": "0.3.1",
-  "description": "Error tracking and product analytics for small teams, set up by your coding agent. Ask it: \"Set up Vinktar for my app.\" It adds the SDK and checks that data arrives, no account needed first; you claim the project with one link when it is done.",
+  "version": "0.3.2",
+  "description": "Error tracking for your app that your coding agent can read. Already on Sentry? Keep the SDK and change the DSN. Starting fresh? Ask your agent: \"Set up Vinktar for my app.\" It adds the SDK and checks that errors arrive, no account needed first; you claim the project with one link when it is done. Then ask what broke, and it reads the stack trace, the release and what the user did before. Product analytics on the same users, free up to 50,000 errors a month.",
   "author": {
     "name": "Vinktar",
     "url": "https://vinktar.com"
@@ -27,9 +27,9 @@
         "privacyPolicyURL": "https://vinktar.com/legal/privacy",
         "termsOfServiceURL": "https://vinktar.com/legal/terms",
         "defaultPrompt": [
-          "Set up Vinktar for my app.",
-          "What changed this week?",
-          "Which errors hit the most people since the last release?"
+          "Set up error tracking for my app.",
+          "Move my errors off Sentry.",
+          "What broke after the last deploy?"
         ],
         "composerIcon": "./.claude-plugin/icon.png",
         "logo": "./.claude-plugin/icon.png"

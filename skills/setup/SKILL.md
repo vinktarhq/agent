@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Set up Vinktar product analytics and error tracking in this codebase end to end, from picking the SDK to checking the data arrives and saying where each environment variable goes. Use when asked to install, set up, configure, audit or extend Vinktar, to add error tracking or product analytics to an app, or to add or change tracked events.
+description: Set up Vinktar product analytics and error tracking in this codebase end to end, from picking the SDK to checking the data arrives and saying where each environment variable goes, and connect Vinktar so its errors and events can be read. Use when asked to install, set up, configure, audit or extend Vinktar, to add error tracking or product analytics to an app, to move error tracking off Sentry or Bugsnag, to add or change tracked events, or when asked about an app's errors, crashes or usage while no Vinktar tools are available.
 ---
 
 # Set up Vinktar

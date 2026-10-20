@@ -9,7 +9,7 @@
     {
       "name": "vinktar",
       "source": "./",
-      "description": "Install Vinktar in your app and query its analytics and errors over MCP."
+      "description": "Error tracking your coding agent can read: keeps your Sentry SDK, sets up a new app, answers what broke."
     }
   ]
 }
