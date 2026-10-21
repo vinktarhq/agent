@@ -48,8 +48,7 @@ Then ask "what broke today?", or type `/vinktar`.
 
 **Cursor**
 
-Install Vinktar from the Cursor Marketplace, or import this repository under Customize → Plugins →
-From GitHub Repository. Cursor asks you to sign in the first time it connects.
+Import this repository under Customize → Plugins → From GitHub Repository. Cursor asks you to sign in the first time it connects.
 
 **Codex**
 
