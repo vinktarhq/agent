@@ -1,7 +1,7 @@
 # Vinktar for coding agents
 
-[Vinktar](https://vinktar.com?ref=agent-plugin) is product analytics and error tracking your coding
-agent can use. This plugin gives Claude Code, Cursor and Codex two things at once:
+[Vinktar](https://vinktar.com?ref=agent-plugin) is error tracking your coding agent can read, with what
+the user did right before each error. This plugin gives Claude Code, Cursor and Codex three things:
 
 - **The Vinktar MCP server** (`https://mcp.vinktar.com/mcp`). You sign in in the browser and choose
   a workspace, the projects it may reach, and read, build or configure. No key to paste.
@@ -10,7 +10,6 @@ agent can use. This plugin gives Claude Code, Cursor and Codex two things at onc
   write key over the connection, wires identify, errors and source maps, defines each event it
   tracks, checks what actually arrived, and ends with a list of every environment variable and where
   it goes.
-
 - **The `/vinktar` command.** Type `/vinktar` to set Vinktar up in this repo, or once it is set up
   to hear what broke. `/vinktar what broke after the last deploy?` asks a question directly.
 
@@ -35,12 +34,17 @@ claude plugin install vinktar@vinktar
 Run `/vinktar:setup`. It can set the app up before you sign in; to ask questions about your data
 later, run `/mcp`, pick `vinktar` and authenticate.
 
-**Claude Desktop**
+**Claude (claude.ai, the desktop app, Cowork)**
 
-Add the plugin and ask Claude to set up Vinktar. To ask about your data afterwards, connect Vinktar on
-the plugin's Connectors tab or at
-[claude.ai/customize/connectors](https://claude.ai/customize/connectors): adding the plugin does not
-sign you in by itself.
+Adding the plugin does not connect Vinktar. After you add it:
+
+1. Open the plugin's Connectors tab, or
+   [claude.ai/customize/connectors](https://claude.ai/customize/connectors), and choose Connect next
+   to Vinktar.
+2. Sign in or make a free account in the browser, leave Build and Configure on, and approve.
+3. Start a new chat. A chat that was already open does not pick up the connection.
+
+Then ask "what broke today?", or type `/vinktar`.
 
 **Cursor**
 
