@@ -11,23 +11,14 @@ Vinktar tools on the MCP connection this plugin adds.
 ## 1. Get connected
 
 Look for the Vinktar tools (`get_install_guide`, `list_projects`, `get_project_keys`). Their names
-carry a prefix that differs from app to app. This plugin adds one connection, `vinktar`, which works
-before anyone has signed in and asks for sign-in at the first call that reads data. The tools are
-listed before sign-in, so being there is not enough: call `list_projects`.
+carry a prefix that differs from app to app. This plugin adds one connection, `vinktar`, which needs
+the person to sign in before any tool answers. Call `list_projects` to check.
 
 - **It answers:** go to step 2.
 - **A Vinktar tool whose name ends in `authenticate` is there instead:** call it. It returns a
   sign-in link. Give the link to the person, wait until they say they approved, then go to step 2.
-- **It fails for want of sign-in, or only `start_project` and `get_install_guide` are there:** do
-  not stop and do not wait. Call `start_project` with the app's name (and its stack as `platform`).
-  It returns a write key and a claim link. Go to step 2 with that key in place of
-  `get_project_keys`, and give the person the claim link once the first event has arrived: opening
-  it signs them in, or makes them an account on the spot, and keeps the project with its data.
-  Until they have claimed it, skip `define_event`, `set_project_notes` and `get_setup_status`
-  (check arrival with `get_start_status`), and keep a list of the events you add so you can define
-  them after.
-- **There are no Vinktar tools at all:** what is missing is the connection. Say exactly where, for
-  the app you are running in, then wait:
+- **There are no Vinktar tools, or they fail for want of sign-in:** what is missing is the
+  sign-in. Say exactly where, for the app you are running in, then wait:
   - Claude Desktop and Claude on the web (chat, Cowork, the Code tab, Claude Code on the web): open
     the Vinktar plugin's Connectors tab, or https://claude.ai/customize/connectors. If Vinktar is
     not listed there, add it (Add custom connector, address `https://mcp.vinktar.com/mcp`). Choose
