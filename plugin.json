@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "vinktar",
-  "version": "0.3.4",
-  "description": "Error tracking for your app that your coding agent can read. Already on Sentry? Keep the SDK and change the DSN. Starting fresh? Ask your agent: \"Set up Vinktar for my app.\" It adds the SDK and checks that errors arrive, no account needed first; you claim the project with one link when it is done. Then ask what broke, and it reads the stack trace, the release and what the user did before. Product analytics on the same users, free up to 50,000 errors a month.",
+  "version": "0.3.5",
+  "description": "Error tracking for your app that your coding agent can read. Already on Sentry? Keep the SDK and change the DSN. Starting fresh? Ask your agent: \"Set up Vinktar for my app.\" You sign in once, and it adds the SDK and checks that errors arrive. Then ask what broke, and it reads the stack trace, the release and what the user did before. Product analytics on the same users, free up to 50,000 errors a month.",
   "author": {
     "name": "Vinktar",
     "url": "https://vinktar.com"
